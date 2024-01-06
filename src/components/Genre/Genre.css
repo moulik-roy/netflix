@@ -1,0 +1,36 @@
+.genre {
+    margin-left: 20px;
+    color: white;
+}
+
+.movies {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.movies::-webkit-scrollbar {
+    display: none;
+}
+
+.movie_poster {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+    cursor: pointer;
+}
+
+.movie_poster:hover {
+    transform: scale(1.08);
+}
+
+.movie_poster_focus {
+    max-height: 250px;
+}
+
+.movie_poster_focus:hover {
+    transform: scale(1.09);
+}
